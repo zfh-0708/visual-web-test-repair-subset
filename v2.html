@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V2 Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eef3f9, #dde7f3);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 520px;
+      margin: 90px auto;
+      background: white;
+      padding: 36px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.14);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0;
+      color: #1b2736;
+    }
+    .hint {
+      color: #6c7a89;
+      font-size: 14px;
+    }
+    .row {
+      margin-bottom: 14px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #334155;
+      font-weight: 600;
+    }
+    input {
+      width: 92%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #2d7ff9;
+      color: white;
+      cursor: pointer;
+      margin-left: 120px; /* 故意让位置变化 */
+    }
+    button:hover {
+      background: #1c68d8;
+    }
+    #result {
+      margin-top: 22px;
+      font-weight: bold;
+      color: green;
+      min-height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Secure Login V2</h1>
+      <div class="hint">Redesigned interface</div>
+    </div>
+
+    <div class="row">
+      <label>User Name</label>
+      <input type="text" placeholder="Enter username" />
+    </div>
+
+    <div class="row">
+      <label>Password</label>
+      <input type="password" placeholder="Enter password" />
+    </div>
+
+    <div class="actions">
+      <button id="btn-2026" onclick="document.getElementById('result').innerText='Login Success';">
+        Login
+      </button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+</body>
+</html>
